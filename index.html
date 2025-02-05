@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Enter Your City" id="input">
+            <div class="iconSearch">
+                <i class="fa-solid fa-magnifying-glass" id="iconGlass"></i>
+            </div>
+        </div>
+        <div class="timeZone">
+            <h2 class="timeUpdate">timeZone</h2>
+        </div>
+        <div class="location-not-found">
+            <h1 id="errorMsg">Sorry Location Not Found !!!</h1>
+            <img src="images/404.png" alt="404" id="img404">
+        </div>
+        <div class="weatherINFO">
+            
+        </div>
+        <div class="imgContainer">
+            <img src="images/cloud.png" alt="Weather Image" id="weatherImage">
+            <div class="Weather">
+                <h2 id="temperature">0<sup>°C</sup></h2>
+                <h2 id="description">Light Rain</h2>
+            </div>
+        </div>
+        <div class="weatherInfo">
+           <div id="leftInfo"  class="downInfo">
+                <div class="dropIcon"><i class="fa-solid fa-droplet"></i></div>
+                <div class="info">
+                    <p id="humidity">45%</p>
+                    <p>Humidity</p>
+                </div>
+           </div>
+           <div id="rightInfo" class="downInfo">
+                <div class="windIcon"><i class="fa-solid fa-wind"></i></div>
+                <div class="info">
+                    <p id="windSpeed">12 km/hr</p>
+                    <p>Wind Speed</p>
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
